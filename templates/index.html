@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Project</title>
+
+    <style>
+        body {
+            background-color: #d8ebe4;
+        }
+        
+        #txt {
+            width: 730px;
+            height: 50px;
+            font-size: 25px;
+        }
+        
+        #dd {
+            padding-top: 10px;
+            padding-left: 25px;
+            height: 75px;
+        }
+        
+        #dd h1 {
+            font-family: Mulish, Avenir Next, Trebuchet MS, sans-serif;
+            font-weight: 400;
+            text-size-adjust: 100%;
+            color: #1d1b2f;
+            font-size: 36px;
+        }
+        
+        .button {
+            background-color: #e36387;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            height: 52px;
+            border-radius: 4px;
+        }
+        
+        .button:hover {
+            background-color: #b24c69;
+        }
+        
+        img {
+            padding-left: 120px;
+        }
+        
+        
+        #img1 {
+            padding-bottom: 100px;
+            padding-left: 20px;
+        }
+        #inp{
+            padding: 20px;
+            border: solid black 2px;
+            width: 180px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+
+    <div id="dd" style="text-align: center;">
+        <h1><b>Go From Photo To Cartoon In One Click!</b></h1>
+        <p style="color: #221e46;">
+            <h3>Change your pictures into cartoon and pencil sketch.</h3>
+        </p>
+    </div>
+
+    <form name="passData" action="http://localhost:5000/uploader" method="post" enctype="multipart/form-data">
+        <br>
+        <br><br>
+        <div style="text-align: center;">
+            <p><input type="file" accept="image/*" name="infile" id="inp"></p>
+            <br>
+            <button type="submit" class="button" id="start">Try it now!</button>
+        </div>
+        <br><br>
+
+
+
+    </form>
+    <img src="static/index_pic.jpg" width=300 height=300>
+    <img src="static/arrow3.jpeg" id="img1" width=100 height=100>
+
+    <img src="static/index1.jpeg" width=300 height=300 style="padding-left: 20px;">
+    <img src="static/index2.jpeg" width=300 height=300>
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Project</title>
+
+
+    <style>
+        .btn {
+            background-color: #5f9ea0;
+            border: none;
+            color: white;
+            padding: 10px 15px;
+            cursor: pointer;
+            font-size: 10px;
+            border-radius: 4px;
+        }
+        
+        .btn:hover {
+            background-color: #008080;
+        }
+        
+        .center {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        td {
+            color: #282846;
+            justify-content: center;
+            font-size: large;
+            font-weight: bold;
+            padding: 10px;
+        }
+        
+        p {
+            font-family: Mulish, Avenir Next, Trebuchet MS, sans-serif;
+        }
+        
+        h1 {
+            font-family: Mulish, Avenir Next, Trebuchet MS, sans-serif;
+            text-decoration: underline;
+        }
+        
+        body {
+            text-align: center;
+            background-color: #d8ebe4;
+            margin-top: 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>ORIGINAL INPUT IMAGE</h1><br>
+    <img src="static/img.jpg" width=300 height=300><br>
+    <br><br>
+    <h1>STAGES OF CARTOONING AN IMAGE</h1>
+    <table class="center" id='tab1'>
+        <tr>
+
+            <td>
+                <p>Gray Image</p>
+                <img src="static/gray.jpg" width=200 height=200><br>
+
+            </td>
+            <td>
+                <p>Edges of the Image</p>
+                <img src="static/edges.jpg" width=200 height=200><br>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>Color Image</p>
+                <img src="static/color.jpg" width=200 height=200><br>
+
+            </td>
+            <td>
+                <p>Gray Blur Image</p>
+                <img src="static/gray_blur.jpg" width=200 height=200><br>
+
+            </td>
+
+        </tr>
+
+    </table>
+    <br><br>
+    <h1>FINAL IMAGE OUTPUTS</h1>
+    <table class="center">
+
+        <tr>
+            <td>
+                <p>Final Cartoon Image</p>
+                <a href="static/cartoon.jpg" download="image2 ">
+                    <img src="static/cartoon.jpg" width=300 height=300><br>
+                    <button class="btn "><i class="fa fa-download " value="static/cartoon.jpg"  ></i> Download</button></a>
+
+            </td>
+            <td>
+                <p>Final Pencil Sketch Image</p>
+                <a href="static/pencil.jpg" download="image2 ">
+                    <img src="static/pencil.jpg" width=300 height=300><br>
+                    <button class="btn "><i class="fa fa-download " value="static/pencil.jpg"  ></i> Download</button></a>
+
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
